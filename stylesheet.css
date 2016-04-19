@@ -1,0 +1,43 @@
+#left {
+	float: left;
+	width: 25%;
+	margin-top: 100px;
+}
+
+#right {
+	float: right;
+	width: 75%;
+	margin-top: 100px;
+}
+
+#rightleft {
+	float: left;
+	width: 65%;
+}
+
+#rightright {
+	float: right;
+	width: 35%;
+	margin-top: 10px;
+}
+
+#centerpiece, #email, #linkedin,
+#programming, #research {
+	display: block;
+}
+
+#facebook {
+	display: block;
+	margin-top: 10px;
+}
+
+#twitter {
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+#resume {
+	display: block;
+	margin-bottom: 20px;
+}

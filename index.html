@@ -6,30 +6,53 @@
 		<link href="/img/logo.png" rel="shortcut icon" type="image/x-icon" />
 
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-		<script type="text/javascript" src="script_hp.js"></script>
+
 	</head>
+
 	<body>
-
-		<div id="left">
-			<div id="facebook"><a href="https://www.facebook.com/MarkVPeng" target="_blank"><img src="/img/facebook.png" Title="Facebook" /></a></div>
-			<div id="twitter"><a href="https://twitter.com/markvpeng" target="_blank"><img src="/img/twitter.png" Title="Twitter" /></a></div>
-			<div id="linkedin"><a href="http://www.linkedin.com/in/markvpeng" target="_blank"><img src="/img/linkedin.png" Title="LinkedIn" /></a></div>
-		</div>
-
-		<div id="right">
-			<div id="rightleft" align="center">
-				<div id="centerpiece" align="center"><img src="/img/homeLogo.png" Title="Welcome to Mark Peng's Personal Site!"/></div>
-				<div id="email" aligh="center">
-					<a href="mailto: peng.markv@gmail.com" target="_blank"><img src="/img/email.png" Title="Let's Chat!: peng.markv@gmail.com" /></a>
-				</div>
-			</div>
-
-			<div id="rightright">
-				<div id="resume" align="right"><a href="/resources/resume-mark_peng.pdf" target="_blank"><img src="/img/resume.png" Title="RESUME" /></a></div>
-				<div id="programming" align="right"><a href="programming.html"><img src="/img/terminal.png" Title="Programming" /></a></div>
-				<div id="research" align="right"><a href="research.html"><img src="/img/beaker.png" Title="Research" /></a></div>
-			</div>
-		</div>
-
+        <div id="nexus">
+            <div id="nexus-logo">
+                <img src="/img/logo.png" Title="Mark Peng"/>
+            </div>
+            <div class="page">
+                <a href="/resources/resume-mark_peng.pdf" target="_blank"><img src="/img/resume.png" Title="Résumé" /></a>
+            </div>
+            <div class="page">
+                <a href="https://twitter.com/markvpeng" target="_blank"><img src="/img/twitter.png" Title="@markvpeng" /></a>
+            </div>
+            <div class="page">
+                <a href="http://www.linkedin.com/in/markvpeng" target="_blank"><img src="/img/linkedin.png" Title="LinkedIn" /></a>
+            </div>
+            <div class="page">
+                <a href="programming.html"><img src="/img/terminal.png" Title="Programming" /></a>
+            </div>
+            <div class="page">
+                <a href="research.html"><img src="/img/beaker.png" Title="Research" /></a>
+            </div>
+        </div>
 	</body>
+
+	<script>
+		function distributePages() {
+			var radius = 250;
+			var pages = $('.page'), nexus = $('#nexus'),
+				width = nexus.width(), height = nexus.height(),
+				angle = Math.PI / 2, step = (2*Math.PI) / pages.length;
+			pages.each(function() {
+				var x = Math.round(width/2 + radius * Math.cos(angle) - $(this).width()/2);
+				var y = Math.round(height/2 + radius * Math.sin(angle) - $(this).height()/2);
+                $(this).css({
+                    left: x + 'px',
+                    top: y + 'px'
+                });
+                angle += step;
+			});
+		}
+
+        $(document).ready(function() {
+            $('.page').hide();
+            $('.page').fadeIn({duration:4000,easing:"swing"});
+        });
+		distributePages();
+	</script>
 </html>

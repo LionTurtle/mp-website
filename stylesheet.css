@@ -1,43 +1,27 @@
-#left {
-	float: left;
-	width: 25%;
-	margin-top: 100px;
+#nexus {
+	width: 600px;
+	height: 600px;
+	
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -300px 0 0 -300px;
 }
 
-#right {
-	float: right;
-	width: 75%;
-	margin-top: 100px;
+#nexus-logo {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -175px 0 0 -175px;
 }
 
-#rightleft {
-	float: left;
-	width: 65%;
+#nexus-logo img {
+	width: 350px;
+	height: 350px;
 }
 
-#rightright {
-	float: right;
-	width: 35%;
-	margin-top: 10px;
-}
-
-#centerpiece, #email, #linkedin,
-#programming, #research {
-	display: block;
-}
-
-#facebook {
-	display: block;
-	margin-top: 10px;
-}
-
-#twitter {
-	display: block;
-	margin-top: 10px;
-	margin-bottom: 5px;
-}
-
-#resume {
-	display: block;
-	margin-bottom: 20px;
+.page { 
+	width: 100px;
+	height: 100px;
+	position: absolute;
 }

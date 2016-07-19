@@ -25,3 +25,51 @@
 	height: 100px;
 	position: absolute;
 }
+
+.header {
+	display: block;
+	width: 100%;
+}
+
+.header div {
+	display: inline-table;
+	vertical-align: top;
+	width: 100px;
+	height: 100px;
+}
+
+.header a {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	text-decoration: none;
+	font-size: 14px;
+	font-family: Arial, sans-serif;
+	color: black;
+}
+
+.main-container {
+	padding: 50px 100px 20px 100px;
+}
+
+.item {
+	display: inline-table;
+	padding-bottom: 30px;
+}
+
+.icon {
+	display: table-cell;
+	padding-right: 30px;
+}
+
+.icon img {
+	width: 100px;
+}
+
+.desc {
+	display: table-cell;
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	text-align: justify;
+	vertical-align: top;
+}

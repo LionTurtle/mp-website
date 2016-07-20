@@ -20,10 +20,13 @@
 	height: 350px;
 }
 
-.page { 
+.page {
+	position: absolute;
+}
+
+.page img {
 	width: 100px;
 	height: 100px;
-	position: absolute;
 }
 
 .header {

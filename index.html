@@ -47,10 +47,13 @@
 			});
 		}
 
-        $(document).ready(function() {
-            $('.page').hide();
+        distributePages();
+        $('#nexus').hide();
+        $('.page').hide();
+        $(window).on('load', function() {
+            $('#nexus').show();
             $('.page').fadeIn({duration:4000,easing:"swing"});
         });
-		distributePages();
+		
 	</script>
 </html>

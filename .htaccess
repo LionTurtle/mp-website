@@ -1,0 +1,7 @@
+
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^markvpeng\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.markvpeng\.com$
+RewriteRule ^bpm\-playlists$ "http\:\/\/bpm\-playlists\.herokuapp\.com\/" [R=301,L]
+

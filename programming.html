@@ -5,6 +5,7 @@
 	<title>Programming</title>
 	<link href="stylesheet.css" rel="stylesheet" type="text/css" />
 	<link href="/img/logo.png" rel="shortcut icon" type="image/x-icon" />
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 </head>
 <body>
 	<div class="header">
@@ -90,5 +91,12 @@
 		</div>
 	</div>
 </body>
+
+<script>
+	$("body").hide();
+	$(window).on('load', function() {
+		$("body").show();
+	});
+</script>
 
 </html>
